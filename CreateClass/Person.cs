@@ -8,9 +8,9 @@ namespace CreateClass
 {
     class Person
     {
-        private string name;
-        private string birthday;
-        private CreateClass.MainClass.Genders gender;
+        string name;
+        string birthday;
+        CreateClass.MainClass.Genders gender;
 
 
         public Person(string name, string birthday, CreateClass.MainClass.Genders gender)

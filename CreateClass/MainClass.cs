@@ -15,6 +15,10 @@ namespace CreateClass
             Console.WriteLine(person1);
 
             Console.ReadLine();
+
+            Employee employee1 = new Employee(100000, "cleaner", "Andi", "1991.06.16", CreateClass.MainClass.Genders.female);
+            Console.WriteLine(employee1);
+            Console.ReadLine();
         }
 
         public enum Genders
