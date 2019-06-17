@@ -8,15 +8,21 @@ namespace CreateClass
 {
     class Room
     {
-        private int roomNum;
+        public int RoomNum;
         public Room(int roomNum)
         {
-            this.roomNum = roomNum;
+            this.RoomNum = roomNum;
+        }
+
+        public int Number
+        {
+            get;
+            internal set;
         }
 
         public override string ToString()
         {
-            return "Room number: " + roomNum;
+            return "Room number: " + RoomNum;
         }
     }
 }

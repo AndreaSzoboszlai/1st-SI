@@ -8,21 +8,21 @@ namespace CreateClass
 {
     class Person
     {
-        string name;
-        string birthday;
-        CreateClass.MainClass.Genders gender;
+        string Name;
+        string Birthday;
+        CreateClass.MainClass.Genders Gender;
 
 
         public Person(string name, string birthday, CreateClass.MainClass.Genders gender)
         {
-            this.name = name;
-            this.birthday = birthday;
-            this.gender = gender;
+            this.Name = name;
+            this.Birthday = birthday;
+            this.Gender = gender;
         }
 
         public override string ToString()
         {
-            return "Person: " + name + " " + birthday + " " + gender;
+            return "Person: " + Name + " " + Birthday + " " + Gender;
         }
 
     }

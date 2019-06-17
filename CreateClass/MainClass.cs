@@ -20,6 +20,15 @@ namespace CreateClass
             Employee employee1 = new Employee(100000, "cleaner", "Andi", "1991.06.16", CreateClass.MainClass.Genders.female, room);
             Console.WriteLine(employee1);
             Console.ReadLine();
+
+            Employee Kovacs = new Employee( 1000, "Géza", "léhűtő", "1990.01.01", CreateClass.MainClass.Genders.male);
+            Kovacs.RoomNum = new Room(111);
+            Employee Kovacs2 = (Employee)Kovacs.Clone();
+            Kovacs2.RoomNum.RoomNum = 112;
+            Console.WriteLine(Kovacs.ToString());
+            Console.WriteLine(Kovacs2.ToString());
+            Console.ReadKey();
+            Console.ReadLine();
         }
 
         public enum Genders
