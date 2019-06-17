@@ -16,7 +16,8 @@ namespace CreateClass
 
             Console.ReadLine();
 
-            Employee employee1 = new Employee(100000, "cleaner", "Andi", "1991.06.16", CreateClass.MainClass.Genders.female);
+            Room room = new Room(2);
+            Employee employee1 = new Employee(100000, "cleaner", "Andi", "1991.06.16", CreateClass.MainClass.Genders.female, room);
             Console.WriteLine(employee1);
             Console.ReadLine();
         }
