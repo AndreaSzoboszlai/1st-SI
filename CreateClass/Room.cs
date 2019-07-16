@@ -9,16 +9,13 @@ namespace CreateClass
     class Room
     {
         public int RoomNum;
+        public int Number { get; internal set; }
+
         public Room(int roomNum)
         {
             this.RoomNum = roomNum;
         }
 
-        public int Number
-        {
-            get;
-            internal set;
-        }
 
         public override string ToString()
         {

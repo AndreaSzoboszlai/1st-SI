@@ -9,11 +9,11 @@ namespace CreateClass
     class Person
     {
         string Name;
-        string Birthday;
+        DateTime Birthday;
         CreateClass.MainClass.Genders Gender;
 
 
-        public Person(string name, string birthday, CreateClass.MainClass.Genders gender)
+        public Person(string name, DateTime birthday, CreateClass.MainClass.Genders gender)
         {
             this.Name = name;
             this.Birthday = birthday;

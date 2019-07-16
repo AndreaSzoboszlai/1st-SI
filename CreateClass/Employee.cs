@@ -10,31 +10,25 @@ namespace CreateClass
     {
         private int Salary;
         private string Profession;
-        public Room RoomNum;
+        public Room RoomNum { get; set; }
 
-        public Employee(int salary, string profession, string name, string birthday, MainClass.Genders gender, Room roomNum) : base(name, birthday, gender)
+        public Employee(int salary, string profession, string name, DateTime birthday, MainClass.Genders gender, Room roomNum) : base(name, birthday, gender)
         {
             this.Salary = salary;
             this.Profession = profession;
             this.RoomNum = roomNum;
         }
 
-        public Employee(int salary, string profession, string name, string birthday, MainClass.Genders gender) : base(name, birthday, gender)
+        public Employee(int salary, string profession, string name, DateTime birthday, MainClass.Genders gender) : base(name, birthday, gender)
         {
             this.Salary = salary;
             this.Profession = profession;
         }
 
-        public Room Room
-        {
-            get;
-            internal set;
-        }
-
         public object Clone()
         {
             Employee newEmployee = (Employee)this.MemberwiseClone();
-            newEmployee.Room = new Room(Room.Number);
+            newEmployee.RoomNum = new Room(RoomNum.RoomNum);
             return newEmployee;
         }
 

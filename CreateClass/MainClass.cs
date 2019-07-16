@@ -10,18 +10,19 @@ namespace CreateClass
     {
         static void Main(string[] args)
         {
-            Person person1 = new Person("Andi", "1991.06.16.", CreateClass.MainClass.Genders.female);
+            DateTime parsedDate = DateTime.Parse("1991.06.16.");
+            Person person1 = new Person("Andi", parsedDate, CreateClass.MainClass.Genders.female);
 
             Console.WriteLine(person1);
 
             Console.ReadLine();
 
             Room room = new Room(2);
-            Employee employee1 = new Employee(100000, "cleaner", "Andi", "1991.06.16", CreateClass.MainClass.Genders.female, room);
+            Employee employee1 = new Employee(100000, "cleaner", "Andi", DateTime.Now, CreateClass.MainClass.Genders.female, room);
             Console.WriteLine(employee1);
             Console.ReadLine();
 
-            Employee Kovacs = new Employee( 1000, "Géza", "léhűtő", "1990.01.01", CreateClass.MainClass.Genders.male);
+            Employee Kovacs = new Employee( 1000, "Géza", "léhűtő", DateTime.Now, CreateClass.MainClass.Genders.male);
             Kovacs.RoomNum = new Room(111);
             Employee Kovacs2 = (Employee)Kovacs.Clone();
             Kovacs2.RoomNum.RoomNum = 112;
